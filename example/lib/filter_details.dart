@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:native_filters/native_filters.dart';
 
@@ -197,8 +196,7 @@ class _NumFieldState extends State<_NumField> {
                     await widget.filter
                         .setNumValue(widget.name, num.parse(value));
                   })),
-          // ignore: deprecated_member_use
-          RaisedButton(
+          OutlinedButton(
               child: Text('apply'),
               onPressed: () async {
                 await widget.filter
